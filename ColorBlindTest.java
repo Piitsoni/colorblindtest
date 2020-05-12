@@ -49,6 +49,7 @@ public class ColorBlindTest {
         statusLabel.setText("TÄMÄ ON TEKSTIÄ");
 
         panel1 = new JPanel();
+        panel2 = new JPanel();
 
         JButton SuljeButton = new JButton("SULJE");
         SuljeButton.setActionCommand("SULJE");
@@ -61,10 +62,11 @@ public class ColorBlindTest {
         JLabel img = new JLabel(new ImageIcon("1"));
 
         // img.setIcon(new ImageIcon("1"));
-        panel1.add(img);
+        panel2.add(img);
         // panel1.add(panel1);
 
         controlPanel.add(panel1);
+        controlPanel.add(panel2)
         // controlPanel.revalidate();
         controlPanel.repaint();
         mainFrame.setVisible(true);
